@@ -159,7 +159,7 @@ $tanggal_masuk = date("Y-m-d");
 
 								
 								$pengirim= $_POST['pengirim'];
-								$pecah_nama = explode($nama_supplier);
+								$pecah_nama = explode(".", $nama_supplier);
 								$nama_supplier = $pecah_nama[0];
 								
 								$satuan = $_POST['satuan'];

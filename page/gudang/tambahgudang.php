@@ -86,7 +86,7 @@ $jumlah = 0;
                             <label for="">Jumlah</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="jumlah" class="form-control" id="jumlah" value="<?php echo $jumlah; ?>" required />
+                                <input type="text" name="jumlah" class="form-control" id="jumlah" value="<?php echo $jumlah; ?>"/>
                                      
 									 
 							</div>
