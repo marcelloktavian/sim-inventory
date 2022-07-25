@@ -1,15 +1,10 @@
-
-
-
-
-
- <!-- Begin Page Content -->
+<!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data User</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Pengguna</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -21,9 +16,6 @@
 											<th>Nama</th>
 											
 											<th>Telepon</th>
-											<th>Username</th>
-                                            <th>Password</th>
-                                            <th>Level</th>
                                             <th>Foto</th>
 											<th>Aksi</th>
 											
@@ -46,10 +38,6 @@
 											<td><?php echo $data['nama'] ?></td>
 											
 											<td><?php echo $data['telepon'] ?></td>
-                                            <td><?php echo $data['username'] ?></td>
-								
-											<td><?php echo $data['password'] ?></td>
-											<td><?php echo $data['level'] ?></td>
 											<td><img src="img/<?php echo $data['foto'] ?>"width="50" height="50" alt=""> </td>
 										
 											<td>

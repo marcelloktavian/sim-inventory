@@ -114,7 +114,7 @@ if(empty($_SESSION['superadmin'])){
 	  
 	    <li class="nav-item active">
         <a class="nav-link" href="?page=pengguna">
-          <i class="fas fa-fw fa-home"></i>
+          <i class="fas fa-fw fa-user"></i>
           <span>Data Pengguna</span></a>
       </li>
 	  
