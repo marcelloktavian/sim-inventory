@@ -17,14 +17,14 @@
 							<label for="">Jenis Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="jenis_barang" class="form-control" />	 
+                                <input type="text" name="jenis_barang" class="form-control" required/>	 
 							</div>
                             </div>
 					
 							
 						
 								<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
-							
+								<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=jenisbarang';">
 							</form>
 						
 							
@@ -45,7 +45,6 @@
 									?>
 									
 										<script type="text/javascript">
-										alert("Data Berhasil Disimpan");
 										window.location.href="?page=jenisbarang";
 										</script>
 										

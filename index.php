@@ -279,14 +279,14 @@ if(empty($_SESSION['superadmin'])){
 					   include "page/jenisbarang/jenisbarang.php";
 				   }
 				    if ($aksi == "tambahjenis") {
-					   include "page//jenisbarang/tambahjenis.php";
+					   include "page/jenisbarang/tambahjenis.php";
 				   }
-				    if ($aksi == "ubahsupplier") {
-					   include "page/supplier/ubahsupplier.php";
+				    if ($aksi == "ubahjenis") {
+					   include "page/jenisbarang/ubahjenis.php";
 				   }
 				   
-				    if ($aksi == "hapussupplier") {
-					   include "page/supplier/hapussupplier.php";
+				    if ($aksi == "hapusjenis") {
+					   include "page/jenisbarang/hapusjenis.php";
 				   }
 			   }
 			   
