@@ -17,7 +17,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Ubah User</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Ubah Barang</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -89,6 +89,7 @@
 						
 							
 							<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
+							<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=gudang';">
 							
 							</form>
 							
