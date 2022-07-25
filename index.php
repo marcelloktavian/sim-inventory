@@ -86,8 +86,8 @@ if(empty($_SESSION['superadmin'])){
 	  </li>
 		 <li class="nav-item ">
         <a class="nav-link">
+			<div class="d-flex align-items-center justify-content-center" class="email">Selamat Datang</div>
          	<div class="d-flex align-items-center justify-content-center" class="name">  <?php echo  $data['nama'];?></div></font>
-			<div class="d-flex align-items-center justify-content-center" class="email">Anda adalah <?php echo $data['level'];?></div>
 		 </a>
       </li>
 	
