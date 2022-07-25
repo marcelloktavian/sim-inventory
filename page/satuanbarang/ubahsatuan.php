@@ -17,7 +17,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Ubah User</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Ubah Satuan Barang</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -30,7 +30,7 @@
 							<label for="">Satuan Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="satuan" value="<?php echo $tampil['satuan']; ?>" class="form-control" />
+                                <input type="text" name="satuan" value="<?php echo $tampil['satuan']; ?>" class="form-control" required/>
 	 
 							</div>
                             </div>
@@ -38,6 +38,7 @@
 						
 							
 							<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
+							<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=satuanbarang';">
 							
 							</form>
 							
@@ -58,7 +59,6 @@
 									?>
 									
 										<script type="text/javascript">
-										alert("Data Berhasil Diubah");
 										window.location.href="?page=satuanbarang";
 										</script>
 										

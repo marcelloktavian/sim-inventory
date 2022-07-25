@@ -9,7 +9,6 @@
  
  
 	<script type="text/javascript">
-	alert("Data Berhasil Dihapus");
 	window.location.href="?page=satuanbarang";
 	</script>
 	

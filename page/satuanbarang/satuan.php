@@ -19,7 +19,7 @@
 											<th>No</th>
 											<th>Satuan Barang</th>
 											
-											<th>Pengaturan</th>
+											<th>Aksi</th>
                                          
                                         </tr>
 										</thead>
