@@ -3,7 +3,7 @@
 
 
 $koneksi = new mysqli("localhost","root","","inventori");
-$no = mysqli_query($koneksi, "select kode_barang from gudang order by kode_barang desc");
+$no = mysqli_query($koneksi, "select kode_barang from gudang order by right(kode_barang, 3) desc");
 $kdbarang = mysqli_fetch_array($no);
 $kode = $kdbarang['kode_barang'];
 
@@ -60,14 +60,14 @@ $jumlah = 0;
 							<label for="">Nama Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="nama_barang" class="form-control" />	 
+                                <input type="text" name="nama_barang" class="form-control" required />	 
 							</div>
                             </div>
 							
 						<label for="">Jenis Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <select name="jenis_barang" class="form-control" />
+                                <select name="jenis_barang" class="form-control" required/>
 								<option value="">-- Pilih Jenis Barang  --</option>
 								<?php
 								
@@ -86,7 +86,7 @@ $jumlah = 0;
                             <label for="">Jumlah</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="jumlah" class="form-control" id="jumlah" value="<?php echo $jumlah; ?>"/>
+                                <input type="text" name="jumlah" class="form-control" id="jumlah" value="<?php echo $jumlah; ?>" readonly/>
                                      
 									 
 							</div>
@@ -101,7 +101,7 @@ $jumlah = 0;
 							<label for="">Satuan Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <select name="satuan" class="form-control" />
+                                <select name="satuan" class="form-control" required />
 								<option value="">-- Pilih Satuan Barang --</option>
 								<?php
 								
@@ -117,6 +117,7 @@ $jumlah = 0;
                             </div>
 							
 							<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
+							<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=gudang';">
 							
 							</form>
 							

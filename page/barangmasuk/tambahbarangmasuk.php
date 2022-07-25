@@ -67,7 +67,7 @@ $tanggal_masuk = date("Y-m-d");
 							<label for="">Tanggal Masuk</label>
                             <div class="form-group">
                                <div class="form-line">
-                                 <input type="date" name="tanggal_masuk" class="form-control" id="tanggal_masuk" value="<?php echo $tanggal_masuk; ?>" />
+                                 <input type="date" name="tanggal_masuk" class="form-control" id="tanggal_masuk" value="<?php echo $tanggal_masuk; ?>" required />
 							</div>
                             </div>
 							
@@ -75,7 +75,7 @@ $tanggal_masuk = date("Y-m-d");
 							<label for="">Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <select name="barang" id="cmb_barang" class="form-control" />
+                                <select name="barang" id="cmb_barang" class="form-control" required />
 								<option value="">-- Pilih Barang  --</option>
 								<?php
 								
@@ -96,7 +96,7 @@ $tanggal_masuk = date("Y-m-d");
 							<label for="">Jumlah</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="jumlahmasuk" id="jumlahmasuk" onkeyup="sum()" class="form-control" />
+                                <input type="text" name="jumlahmasuk" id="jumlahmasuk" onkeyup="sum()" class="form-control" required />
                                      
 									 
 							</div>
@@ -118,7 +118,7 @@ $tanggal_masuk = date("Y-m-d");
 								<label for="">Supplier</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <select name="pengirim" class="form-control" />
+                                <select name="pengirim" class="form-control" required/>
 								<option value="">-- Pilih Supplier  --</option>
 								<?php
 								
@@ -137,6 +137,7 @@ $tanggal_masuk = date("Y-m-d");
 						
 							
 							<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
+							<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=barangmasuk';">
 							
 							</form>
 							

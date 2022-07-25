@@ -76,7 +76,7 @@ $tanggal_keluar = date("Y-m-d");
 							<label for="">Barang</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <select name="barang" id="cmb_barang" class="form-control" />
+                                <select name="barang" id="cmb_barang" class="form-control" required />
 								<option value="">-- Pilih Barang  --</option>
 								<?php
 								
@@ -96,7 +96,7 @@ $tanggal_keluar = date("Y-m-d");
 							<label for="">Jumlah</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="jumlahkeluar" id="jumlahkeluar" onkeyup="sum()" class="form-control" />
+                                <input type="text" name="jumlahkeluar" id="jumlahkeluar" onkeyup="sum()" class="form-control" required />
 							
                                      
 									 
@@ -106,7 +106,7 @@ $tanggal_keluar = date("Y-m-d");
 							<label for="total">Total Stok</label>
                             <div class="form-group">
                                <div class="form-line">
-                               <input readonly="readonly" name="total" id="total" type="number" class="form-control">
+                               <input readonly="readonly" name="jumlah" id="total" type="number" class="form-control">
                             
 
 							</div>
@@ -117,13 +117,14 @@ $tanggal_keluar = date("Y-m-d");
 							<label for="">Tujuan</label>
                             <div class="form-group">
                                <div class="form-line">
-                                <input type="text" name="tujuan" class="form-control" />	 
+                                <input type="text" name="tujuan" class="form-control" required/>	 
 							</div>
                             </div>
 						
 						
 							
 							<input type="submit" name="simpan" value="Simpan" class="btn btn-primary">
+							<input type="button" name="kembali" value="Kembali" class="btn btn-info" onclick="window.location = '?page=barangkeluar';">
 							
 							</form>
 							
@@ -145,9 +146,8 @@ $tanggal_keluar = date("Y-m-d");
 								$tujuan= $_POST['tujuan'];
 								
 								
-								$total= $_POST['total'];
-								$sisa2 = $total;
-								if ($sisa2 < 0) {
+								
+								if ($jumlah < 0) {
 									?>
 									
 										<script type="text/javascript">
@@ -159,7 +159,7 @@ $tanggal_keluar = date("Y-m-d");
 								}else {
 							
 								
-								$sql = $koneksi->query("insert into barang_keluar (id_transaksi, tanggal, kode_barang, nama_barang, jumlah, total, satuan, tujuan) values('$id_transaksi','$tanggal','$kode_barang','$nama_barang','$jumlah','$total','$satuan','$tujuan')");
+								$sql = $koneksi->query("insert into barang_keluar (id_transaksi, tanggal, kode_barang, nama_barang, jumlah, satuan, tujuan) values('$id_transaksi','$tanggal','$kode_barang','$nama_barang','$jumlah','$satuan','$tujuan')");
 								$sql2 = $koneksi-> query("update gudang set jumlah=(jumlah) where kode_barang='$kode_barang'");
 								?>
 								
