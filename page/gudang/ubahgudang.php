@@ -123,7 +123,7 @@
 									?>
 									
 										<script type="text/javascript">
-										alert("Data Berhasil Diubah");
+										// alert("Data Berhasil Diubah");
 										window.location.href="?page=gudang";
 										</script>
 										

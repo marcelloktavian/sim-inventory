@@ -168,7 +168,7 @@ $tanggal_keluar = date("Y-m-d");
 									
 									
 									<script type="text/javascript">
-										alert("Simpan Data Berhasil");
+										// alert("Simpan Data Berhasil");
 										window.location.href="?page=barangkeluar";
 										
 										</script>
